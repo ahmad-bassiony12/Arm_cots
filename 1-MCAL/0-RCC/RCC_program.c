@@ -4,12 +4,12 @@
 /************************  Version : 1.00  *********************/
 /************************** SWC :  RCC  ************************/
 /***************************************************************/
-#include "STD_Types.h"
+#include "STD_TYPES.h"
 #include "BIT_MATH.h"
 
 #include "RCC_interface.h"
 #include "RCC_register.h"
-#include "RCC_private.h"
+
 #include "RCC_config.h"
 
 
@@ -42,9 +42,6 @@ void RCC_EnableHSE(void){
 	CLR_BIT(RCC_CFGR, RCC_CFGR_SW1); //Select HSE as system clock.
 }
 
-void RCC_EnablePLL(uint8 PLL_CLKSource, uint8 PLL_Value)
-{
-}
 
 
 void	RCC_voidEnablePerClk(u8 Bus,u8 Per)
